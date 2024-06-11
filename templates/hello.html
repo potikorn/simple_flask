@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href="hello.css" />
+    {% endblock %}
+    <title>Hello from Flask</title>
+  </head>
+  <body>
+    {% if person %}
+    <h1 class="text">Hello {{ person }}!</h1>
+    {% else %}
+    <h1 class="text">Hello, World!</h1>
+    {% endif %}
+  </body>
+</html>
